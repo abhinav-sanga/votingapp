@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, intial-scale=1.0"> -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<title>Poll</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>DSLR Vote</h1>
+		<p>Vote for your favorite camera</p>
+		<form id="vote-form">
+			<p>
+				<input type="radio" name="dslr" id="sony" value="Sony">
+				<label for="sony">Sony</label>
+			</p>
+			<p>
+				<input type="radio" name="dslr" id="nikon" value="Nikon">
+				<label for="nikon">Nikon</label>
+			</p>
+			<p>
+				<input type="radio" name="dslr" id="canon" value="Canon">
+				<label for="canon">Canon</label>
+			</p>
+			<p>
+				<input type="radio" name="dslr" id="lumix" value="Lumix">
+				<label for="lumix">Lumix</label>
+			</p>
+			<input type="submit" value="Vote" class="btn">
+		</form>
+	</div>
+
+	<br><br>
+
+	<div id="chartContainer" style="height: 300px;width: 100%"></div>
+
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.4.0/pusher.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
